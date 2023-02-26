@@ -1,0 +1,23 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{6}{c}{Sick Absence 6 Months}                                                                                          \\
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{absence62}\\
+            &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+mqnid       &      -13.45\sym{+}  &      -13.45\sym{+}  &      -11.09\sym{*}  &      -5.701\sym{+}  &      -5.704\sym{+}  &      -5.310\sym{+}  \\
+            &       7.051         &       7.059         &       3.941         &       2.940         &       2.762         &       2.523         \\
+            &      0.0745         &      0.0748         &      0.0125         &      0.0704         &      0.0555         &      0.0515         \\
+Individual FE and Wave FE &          No         &          No         &          No         &         Yes         &         Yes         &         Yes         \\
+Pre Village-level Absence * Wave FE&          No         &         Yes         &         Yes         &          No         &         Yes         &         Yes         \\
+Pre High Malaria Risk Village * Wave FE &          No         &          No         &         Yes         &          No         &          No         &         Yes         \\
+\hline
+\(N\)       &         573         &         573         &         573         &        1122         &        1122         &        1122         \\
+Wild Bootstrap p-value &       0.052         &       0.077         &       0.058         &                     &                     &                     \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Cluster robust SEs (village level). Column 3 and 4 use seaside samples.}\\
+\multicolumn{7}{l}{\footnotesize Estimation is by 2sls, using distribution as a instrument.}\\
+\end{tabular}
+}

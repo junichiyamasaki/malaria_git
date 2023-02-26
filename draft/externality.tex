@@ -1,0 +1,33 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{4}{c}{$\Delta $ RDT +}                                                    \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+                    &        Full         &     Seaside         &        Full         &     Seaside         \\
+\hline
+Distribution        &     -0.0679         &     -0.0954\sym{+}  &     -0.0739         &     -0.0856         \\
+                    &    (0.0447)         &    (0.0455)         &    (0.0495)         &    (0.0527)         \\
+[1em]
+Distribution * 13--19 Years Old&       0.148\sym{*}  &       0.199\sym{**} &       0.178\sym{**} &       0.195\sym{**} \\
+                    &    (0.0542)         &    (0.0505)         &    (0.0514)         &    (0.0539)         \\
+[1em]
+13-19 years old     &     -0.0659\sym{+}  &      -0.117\sym{**} &     -0.0879\sym{*}  &      -0.105\sym{*}  \\
+                    &    (0.0364)         &    (0.0299)         &    (0.0369)         &    (0.0399)         \\
+[1em]
+Distribution * Other Non-User in the HH at the 1st&     0.00667         &     0.00292         &     -0.0866         &     -0.0937         \\
+                    &    (0.0176)         &    (0.0185)         &    (0.0724)         &    (0.0764)         \\
+[1em]
+Other Non-User in the HH at the 1st&     -0.0106         &    -0.00689         &       0.117\sym{**} &       0.124\sym{*}  \\
+                    &    (0.0105)         &    (0.0117)         &    (0.0399)         &    (0.0455)         \\
+[1em]
+Constant            &      0.0678\sym{*}  &      0.0954\sym{*}  &      0.0527         &      0.0644         \\
+                    &    (0.0311)         &    (0.0317)         &    (0.0334)         &    (0.0375)         \\
+\hline
+Observations        &         981         &         811         &         741         &         634         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Cluster robust SEs (village level). We used only 6--19 aged people. Column 2 and 4 use seaside samples.}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}

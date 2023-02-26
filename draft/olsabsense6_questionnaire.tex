@@ -1,0 +1,21 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+                    &\multicolumn{1}{c}{Age 6--12}&\multicolumn{1}{c}{Age 13--19}&\multicolumn{1}{c}{Age 6--12}&\multicolumn{1}{c}{Age 13--19}\\
+\hline
+Distributed         &      -3.372\sym{*}  &      -3.631         &      -1.387         &      -0.752         \\
+                    &     (1.463)         &     (2.565)         &     (0.838)         &     (1.953)         \\
+[1em]
+Constant            &       5.085\sym{**} &       5.805\sym{*}  &       3.100\sym{***}&       2.926         \\
+                    &     (1.341)         &     (2.167)         &     (0.592)         &     (1.366)         \\
+\hline
+Observations        &         573         &          64         &         470         &          50         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Column 3 and 4 use only seaside samples. Cluster robust SEs (village level).}\\
+\multicolumn{5}{l}{\footnotesize Odd colums are 6--12, and even colums are 13--19-years-old samples.}\\
+\multicolumn{5}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular}
+}

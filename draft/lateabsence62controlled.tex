@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+                    &\multicolumn{4}{c}{Sick Absence 6 Months}                                              \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+                    &    Age 6-12         &   Age 13-19         &    Age 6-12         &   Age 13-19         \\
+\hline
+Sleep in a Net      &      -10.63\sym{*}  &      -1.192         &      -8.961\sym{***}&      -0.425         \\
+                    &     (5.088)         &     (2.412)         &     (2.528)         &     (2.530)         \\
+[1em]
+Lag of Absence (One Month)&       0.408\sym{**} &      0.0818         &       0.404\sym{*}  &       0.433\sym{*}  \\
+                    &     (0.136)         &     (0.153)         &     (0.171)         &     (0.200)         \\
+[1em]
+Constant            &       10.32\sym{*}  &       2.033         &       8.759\sym{***}&       1.285         \\
+                    &     (4.664)         &     (1.834)         &     (2.124)         &     (1.929)         \\
+\hline
+Observations        &         535         &         105         &         435         &          84         \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{5}{l}{\footnotesize Cluster robust SEs (village level). Column 3 and 4 use seaside samples.}\\
+\multicolumn{5}{l}{\footnotesize Estimation is by 2sls, using distribution as a instrument.}\\
+\multicolumn{5}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}

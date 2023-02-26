@@ -1,0 +1,26 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+            &\multicolumn{6}{c}{RDT +}                                                                                                          \\
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+            &\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{rdt}\\
+            &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+mqnid       &      -1.094\sym{*}  &      -0.735\sym{**} &      -0.452\sym{**} &      -0.620\sym{*}  &      -0.554\sym{**} &      -0.545\sym{*}  \\
+            &       0.462         &       0.197         &       0.148         &       0.254         &       0.173         &       0.220         \\
+            &       0.030         &       0.002         &       0.007         &       0.026         &       0.005         &       0.024         \\
+highrdtfirst&                     &       0.153\sym{+}  &      0.0189         &                     &                     &                     \\
+            &                     &      0.0852         &      0.0945         &                     &                     &                     \\
+            &                     &       0.089         &       0.844         &                     &                     &                     \\
+Individual FE and Wave FE &          No         &          No         &          No         &         Yes         &         Yes         &         Yes         \\
+Pre Village-level Infection Rate * Wave FE&          No         &          No         &         Yes         &          No         &          No         &         Yes         \\
+Pre High Malaria Risk Village &          No         &          No         &          No         &          No         &         Yes         &         Yes         \\
+\hline
+\(N\)       &         696         &         696         &         696         &        2043         &        2043         &        2043         \\
+Wild Bootstrap p-value &       0.008         &       0.006         &       0.029         &                     &                     &                     \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Cluster robust SEs (village level). Column 3 and 4 use seaside samples.}\\
+\multicolumn{7}{l}{\footnotesize Estimation is by 2sls, using distribution as a instrument.}\\
+\end{tabular}
+}

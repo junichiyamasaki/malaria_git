@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}\\
+            &\multicolumn{1}{c}{absence62}&\multicolumn{1}{c}{mqnid}&\multicolumn{1}{c}{rdt}&\multicolumn{1}{c}{absence62}\\
+            &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+D           &      -1.214\sym{+}  &       0.161\sym{**} &                     &                     \\
+            &       0.609         &      0.0464         &                     &                     \\
+            &       0.064         &       0.003         &                     &                     \\
+phase\_1     &           0         &     -0.0315         &     -0.0364         &           0         \\
+            &           .         &      0.0623         &      0.0425         &           .         \\
+            &           .         &       0.619         &       0.404         &           .         \\
+phase\_2     &      -0.381         &      0.0591\sym{*}  &      0.0803\sym{***}&       0.169         \\
+            &       0.255         &      0.0257         &      0.0168         &       0.314         \\
+            &       0.155         &       0.035         &       0.000         &       0.597         \\
+phase\_3     &           0         &           0         &           0         &           0         \\
+            &           .         &           .         &           .         &           .         \\
+            &           .         &           .         &           .         &           .         \\
+mqnid       &                     &                     &      -0.553\sym{*}  &      -4.912\sym{+}  \\
+            &                     &                     &       0.235         &       2.749         \\
+            &                     &                     &       0.031         &       0.093         \\
+\hline
+\(N\)       &        1068         &        2016         &        1926         &        1068         \\
+Wild Bootstrap p-value &                     &                     &                     &                     \\
+\hline\hline
+\multicolumn{5}{l}{\footnotesize Cluster robust SEs (village level). }\\
+\multicolumn{5}{l}{\footnotesize In column 1, we used the 2nd - 3rd waves and in column 2, we use all the waves.}\\
+\multicolumn{5}{l}{\footnotesize In column 3 - 4, estimation is by 2sls, using distribution as a instrument.}\\
+\end{tabular}
+}

@@ -1,0 +1,40 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+            &\multicolumn{1}{c}{enroll}&\multicolumn{1}{c}{enroll}&\multicolumn{1}{c}{enroll}\\
+            &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+D           &     -0.0384         &     -0.0305         &     -0.0288         \\
+            &      0.0222         &      0.0244         &      0.0262         \\
+            &       0.102         &       0.228         &       0.287         \\
+vilmqnidfirst\_phase\_1&                     &       0.305         &       0.314         \\
+            &                     &       0.189         &       0.185         \\
+            &                     &       0.125         &       0.109         \\
+vilmqnidfirst\_phase\_2&                     &      0.0693         &      0.0653         \\
+            &                     &       0.196         &       0.168         \\
+            &                     &       0.728         &       0.703         \\
+vilmqnidfirst\_phase\_3&                     &           0         &           0         \\
+            &                     &           .         &           .         \\
+            &                     &           .         &           .         \\
+alt\_phase\_1 &                     &                     &  0.00000662\sym{*}  \\
+            &                     &                     &  0.00000232         \\
+            &                     &                     &       0.011         \\
+alt\_phase\_2 &                     &                     &    0.000615         \\
+            &                     &                     &     0.00142         \\
+            &                     &                     &       0.669         \\
+alt\_phase\_3 &                     &                     &    0.000338         \\
+            &                     &                     &     0.00156         \\
+            &                     &                     &       0.831         \\
+Individual FE and Wave FE &         Yes         &         Yes         &         Yes         \\
+Pre Village-level Enrollment * Wave FE&          No         &         Yes         &         Yes         \\
+Pre High Malaria Risk Village &          No         &         Yes         &         Yes         \\
+\hline
+\(N\)       &        2147         &        2147         &        2147         \\
+Wild Bootstrap p-value &                     &                     &                     \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Cluster robust SEs (village level).}\\
+\multicolumn{4}{l}{\footnotesize Estimation is done by OLS using 2nd and 3rd phase.}\\
+\end{tabular}
+}

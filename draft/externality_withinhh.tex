@@ -1,0 +1,27 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{rdt\_hhdiff}&\multicolumn{1}{c}{rdt\_hhdiff}&\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{rdt\_hhdiff}&\multicolumn{1}{c}{rdt\_hhdiff}\\
+\hline
+Sleep in a Net      &      -1.094\sym{*}  &                     &                     &      -0.735\sym{**} &                     &                     \\
+                    &     (0.462)         &                     &                     &     (0.197)         &                     &                     \\
+[1em]
+mqnid\_hhdiff        &                     &      -1.069\sym{**} &      -1.157\sym{***}&                     &      -0.923\sym{***}&      -1.085\sym{***}\\
+                    &                     &     (0.339)         &     (0.234)         &                     &     (0.181)         &     (0.125)         \\
+[1em]
+highrdtfirst        &                     &                     &                     &       0.153\sym{+}  &      0.0534         &      0.0402         \\
+                    &                     &                     &                     &    (0.0852)         &     (0.101)         &     (0.111)         \\
+[1em]
+Constant            &       1.080\sym{*}  &      0.0110         &                     &       0.748\sym{***}&      0.0171         &                     \\
+                    &     (0.413)         &    (0.0165)         &                     &     (0.165)         &    (0.0113)         &                     \\
+\hline
+Observations        &         696         &         670         &         670         &         696         &         670         &         670         \\
+Wild Bootstrap p-value &     0.00801         &     0.00200         &           0         &     0.00601         &           0         &           0         \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize Cluster robust SEs (village level). We used only 6--12 aged people. }\\
+\multicolumn{7}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}

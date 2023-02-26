@@ -1,0 +1,27 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+                    &\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}\\
+\hline
+13-19 years old     &      -0.408         &      -0.644         \\
+                    &     (0.682)         &     (0.436)         \\
+[1em]
+Distributed         &      -1.517\sym{*}  &      -1.371\sym{**} \\
+                    &     (0.533)         &     (0.369)         \\
+[1em]
+Distributed * 13-19 years old&       0.739         &       0.975         \\
+                    &     (0.880)         &     (0.714)         \\
+[1em]
+Constant            &       2.117\sym{***}&       1.971\sym{***}\\
+                    &     (0.501)         &     (0.320)         \\
+\hline
+Observations        &         688         &         562         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize Column 3 and 4 use only seaside samples. Cluster robust SEs (village level).}\\
+\multicolumn{3}{l}{\footnotesize Estimation is done by OLS using only the 2nd Wave.}\\
+\multicolumn{3}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}

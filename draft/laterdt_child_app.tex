@@ -1,0 +1,53 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\hline\hline
+                    &\multicolumn{6}{c}{RDT +}                                                                                                          \\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{RDT +}&\multicolumn{1}{c}{RDT +}\\
+                    &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+Sleep in a Net      &      -1.094\sym{*}  &      -0.713\sym{**} &      -0.415\sym{*}  &      -0.620\sym{*}  &      -0.528\sym{*}  &      -0.533\sym{*}  \\
+                    &       0.462         &       0.187         &       0.151         &       0.254         &       0.225         &       0.231         \\
+                    &       0.030         &       0.001         &       0.014         &       0.026         &       0.032         &       0.034         \\
+highrdtfirst        &                     &       0.168\sym{+}  &      0.0403         &                     &                     &                     \\
+                    &                     &      0.0949         &      0.0879         &                     &                     &                     \\
+                    &                     &       0.094         &       0.652         &                     &                     &                     \\
+vilabsencefirst\_phase\_1&                     &           0         &           0         &                     &    -0.00196         &      0.0113         \\
+                    &                     &           .         &           .         &                     &      0.0283         &      0.0341         \\
+                    &                     &           .         &           .         &                     &       0.946         &       0.745         \\
+vilabsencefirst\_phase\_2&                     &     -0.0197         &     -0.0209         &                     &     0.00509         &      0.0116         \\
+                    &                     &      0.0255         &      0.0174         &                     &      0.0436         &      0.0450         \\
+                    &                     &       0.449         &       0.246         &                     &       0.908         &       0.799         \\
+vilabsencefirst\_phase\_3&                     &           0         &           0         &                     &           0         &           0         \\
+                    &                     &           .         &           .         &                     &           .         &           .         \\
+                    &                     &           .         &           .         &                     &           .         &           .         \\
+vilmqnidfirst\_phase\_1&                     &           0         &           0         &                     &       0.163         &       0.203         \\
+                    &                     &           .         &           .         &                     &       0.428         &       0.402         \\
+                    &                     &           .         &           .         &                     &       0.708         &       0.620         \\
+vilmqnidfirst\_phase\_2&                     &       0.227         &     -0.0786         &                     &      -0.227         &      -0.209         \\
+                    &                     &       0.445         &       0.308         &                     &       0.417         &       0.402         \\
+                    &                     &       0.617         &       0.801         &                     &       0.592         &       0.611         \\
+vilmqnidfirst\_phase\_3&                     &           0         &           0         &                     &           0         &           0         \\
+                    &                     &           .         &           .         &                     &           .         &           .         \\
+                    &                     &           .         &           .         &                     &           .         &           .         \\
+alt\_phase\_1         &                     &           0         &           0         &                     &  -0.0000226\sym{*}  &  -0.0000233\sym{*}  \\
+                    &                     &           .         &           .         &                     &  0.00000893         &  0.00000934         \\
+                    &                     &           .         &           .         &                     &       0.022         &       0.023         \\
+alt\_phase\_2         &                     &   -0.000493         &    -0.00154         &                     &    -0.00122         &    -0.00132         \\
+                    &                     &     0.00207         &     0.00153         &                     &     0.00213         &     0.00218         \\
+                    &                     &       0.815         &       0.328         &                     &       0.576         &       0.554         \\
+alt\_phase\_3         &                     &           0         &           0         &                     &    -0.00289\sym{+}  &    -0.00318\sym{+}  \\
+                    &                     &           .         &           .         &                     &     0.00158         &     0.00169         \\
+                    &                     &           .         &           .         &                     &       0.084         &       0.077         \\
+Individual FE and Wave FE &          No         &          No         &          No         &         Yes         &         Yes         &         Yes         \\
+Pre Village-level Infection Rate * Wave FE&          No         &          No         &         Yes         &          No         &         Yes         &         Yes         \\
+Pre High Malaria Risk Village &          No         &          No         &          No         &          No         &          No         &         Yes         \\
+\hline
+Observations        &         696         &         696         &         696         &        2043         &        2043         &        2043         \\
+Wild Bootstrap p-value &       0.008         &                     &                     &                     &                     &                     \\
+\hline\hline
+\multicolumn{7}{l}{\footnotesize Cluster robust SEs (village level). Column 3 and 4 use seaside samples.}\\
+\multicolumn{7}{l}{\footnotesize Estimation is by 2sls, using distribution as a instrument.}\\
+\end{tabular}
+}

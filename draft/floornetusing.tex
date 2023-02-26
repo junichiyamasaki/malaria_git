@@ -1,0 +1,32 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+                    &\multicolumn{1}{c}{Sleep in a Net}&\multicolumn{1}{c}{Sleep in a Net}&\multicolumn{1}{c}{Sleep in a Net}&\multicolumn{1}{c}{Sleep in a Net}&\multicolumn{1}{c}{Sleep in a Net}\\
+\hline
+6-12 years old      &      -0.133\sym{***}&     -0.0817\sym{**} &      0.0270         &      0.0370         &      0.0564         \\
+                    &    (0.0263)         &    (0.0280)         &    (0.0302)         &    (0.0302)         &    (0.0440)         \\
+[1em]
+floor               &                     &      -0.195\sym{***}&                     &      -0.111\sym{***}&      -0.112\sym{**} \\
+                    &                     &    (0.0253)         &                     &    (0.0268)         &    (0.0304)         \\
+[1em]
+nwithparent         &                     &                     &       0.155\sym{***}&       0.136\sym{***}&       0.142\sym{***}\\
+                    &                     &                     &    (0.0159)         &    (0.0176)         &    (0.0188)         \\
+[1em]
+floorunderteen      &                     &                     &                     &                     &     0.00176         \\
+                    &                     &                     &                     &                     &    (0.0474)         \\
+[1em]
+nwithparentunderteen&                     &                     &                     &                     &     -0.0412\sym{+}  \\
+                    &                     &                     &                     &                     &    (0.0227)         \\
+[1em]
+Constant            &       0.838\sym{***}&       0.874\sym{***}&       0.627\sym{***}&       0.673\sym{***}&       0.665\sym{***}\\
+                    &    (0.0110)         &    (0.0110)         &    (0.0316)         &    (0.0355)         &    (0.0370)         \\
+\hline
+Observations        &        3249         &        3249         &        3249         &        3249         &        3249         \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{6}{l}{\footnotesize Cluster robust SEs (village level). }\\
+\multicolumn{6}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}

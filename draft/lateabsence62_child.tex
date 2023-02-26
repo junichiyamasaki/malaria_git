@@ -1,0 +1,27 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{7}{c}}
+\hline\hline
+                    &\multicolumn{7}{c}{Sick Absence 6 Months}                                                                                                                \\
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}&\multicolumn{1}{c}{(7)}\\
+                    &\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}&\multicolumn{1}{c}{Sick Absence 6 months}\\
+\hline
+Sleep in a Net      &      -13.45\sym{+}  &      -13.45\sym{+}  &      -13.45\sym{+}  &      -11.09\sym{*}  &      -5.701\sym{+}  &      -5.704\sym{+}  &      -5.310\sym{+}  \\
+                    &     (7.051)         &     (7.059)         &     (7.059)         &     (3.941)         &     (2.940)         &     (2.762)         &     (2.523)         \\
+[1em]
+Individual FE and Wave FE &          No         &          No         &          No         &          No         &         Yes         &         Yes         &         Yes         \\
+[1em]
+Pre Village-level Absence * Wave FE&          No         &         Yes         &         Yes         &         Yes         &          No         &         Yes         &         Yes         \\
+[1em]
+Pre Village-level High Malaria Group * Wave FE&          No         &          No         &          No         &         Yes         &          No         &          No         &         Yes         \\
+\hline
+Observations        &         573         &         573         &         573         &         573         &        1122         &        1122         &        1122         \\
+t-stat              &       1.908         &       1.906         &       1.906         &       2.815         &       1.939         &       2.065         &       2.105         \\
+Wild Bootstrap t-stat&       1.908         &       1.906         &       1.906         &                     &                     &                     &                     \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize Cluster robust SEs (village level). Column 3 and 4 use seaside samples.}\\
+\multicolumn{8}{l}{\footnotesize Estimation is by 2sls, using distribution as a instrument.}\\
+\multicolumn{8}{l}{\footnotesize \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), \sym{***} \(p<.001\)}\\
+\end{tabular}
+}
