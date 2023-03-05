@@ -312,10 +312,10 @@ of nets and altitude, these variables were well-balanced. According to a joint t
 \hline \input{descriptiveh} \\
               \multicolumn{6}{l}{\it Data from the School Attendance Records}        \\ 
 \hline
-              \multicolumn{6}{l}{\it Panel C: Phase 0 (January/2009 -- June/2009)}   \\
+              \multicolumn{6}{l}{\it Panel C: pre-Survey (January/2009 -- June/2009)}   \\
               \hline
               \input{descriptiveattendance} \\
-              \multicolumn{6}{l}{\it Panel D: Phase 1 (June/2009 -- December/2009)}   \\
+              \multicolumn{6}{l}{\it Panel D: First Wave (June/2009 -- December/2009)}   \\
               \hline
               \input{descriptiveattendance2} \\ \hline \hline
 \end{tabular}
@@ -376,7 +376,7 @@ absent, we could not collect data on malaria infection by using the RDT. Nonethe
 % level data. However, it is still useful to compare the effect of the
 % distribution from two distinct data source to check them reconcilable.
 
-Panels C and D in \autoref{descriptive_merge_child} show the descriptive statistics for the data from the school attendance records. To examine  school absences and the absence rate, Panel C compares the January 2009 data to the June 2009 data.\footnote{The absence rate is adjusted for holidays and school closures.} Neither of these variables shows significant differences between the two regions. Panel D presents the comparison for June 2009 and December 2009, which corresponds to the first wave, showing nonsignificant differences. The histogram of the number of absence days during the first wave also confirms a baseline balance (\autoref{f:schoolabsence_balance}).
+Panels C and D in \autoref{descriptive_merge_child} show the descriptive statistics for the data from the school attendance records. To examine  school absences and the absence rate, Panel C compares the January 2009 data to the June 2009 data, which is more than six months before we conducted our survey.\footnote{The absence rate is adjusted for holidays and school closures.} Neither of these variables shows significant differences between the two regions. Panel D presents the comparison for June 2009 and December 2009, which corresponds to the first wave, showing nonsignificant differences. The histogram of the number of absence days during the first wave also confirms a baseline balance (\autoref{f:schoolabsence_balance}).
 
 The number of absence days is smaller in the school record data than that in our household survey: attendance books record fewer than one absence day per month, whereas the survey data report more than one absence day per month. This discrepancy may be attributed to the nature of each dataset. Although absences in the household survey included cases where the teacher was absent, the school attendance sheet recorded teacher absences as holidays. However, absences due to sickness are captured well in both datasets.
 
@@ -1138,7 +1138,7 @@ The second term will be zero because the distribution effect $\beta_{i3}$ is ass
 
 \subsubsection{Zero-Learning Effect Case}
 When $\gamma_{it} = 0$ for all individuals, $ - E[\gamma_{3i} L.D_{j3}|G=1] = 0$. Further,  
- $ \left(  E[\alpha_{i3}N_{ij3}|G=0] - E[\alpha_{i3} N_{ij3}|G=1] \right) $ in equation (1) will be zero because both regions would show the same level of attendance in the third phase after controlling for fixed effects. 
+ $ \left(  E[\alpha_{i3}N_{ij3}|G=0] - E[\alpha_{i3} N_{ij3}|G=1] \right) $ in equation (1) will be zero because both regions would show the same level of attendance in the third wave after controlling for fixed effects. 
 
 
 The Wald estimator (equal to 2SLS after taking the first difference) using the DID estimators above as the denominator and numerator becomes 
