@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.2.2)  5 MAR 2023 20:05
+This is e-pTeX, Version 3.141592653-p3.9.0-210218-2.6 (utf8.euc) (TeX Live 2021) (preloaded format=platex 2022.2.2)  5 MAR 2023 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1053,25 +1053,25 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 
 (madagascar_school_wp_master.fff)
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 201.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 203.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 201.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 203.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 201.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 203.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 201.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 203.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 201.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 203.
  [3]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 240.
+(Font)              No change on input line 242.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 240.
+(Font)              No change on input line 242.
 \openout6 = `madagascar_school_wp_master.ttt'.
 
  (madagascar_school_wp_master.ttt)
 [4] [5] [6] [7] [8]
-Overfull \hbox (24.477pt too wide) detected at line 782
+Overfull \hbox (24.477pt too wide) detected at line 784
 []
  []
 
@@ -1106,114 +1106,135 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 33.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 34.
+ [13]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 39.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 40.
- [13]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 47.
+(Font)              No change on input line 46.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 47.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 54.
+(Font)              No change on input line 46.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 54.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 67.
+(Font)              No change on input line 54.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 67.
+(Font)              No change on input line 61.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 77.
+(Font)              No change on input line 61.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 78.
+(Font)              No change on input line 74.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 90.
+(Font)              No change on input line 74.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 90.
+(Font)              No change on input line 84.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 96.
+(Font)              No change on input line 85.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 96.
+(Font)              No change on input line 97.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 102.
+(Font)              No change on input line 97.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 102.
+(Font)              No change on input line 104.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 107.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 107.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 112.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 113.
+(Font)              No change on input line 104.
  [14]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 119.
+(Font)              No change on input line 110.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 120.
+(Font)              No change on input line 110.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 116.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 116.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 123.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 124.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 125.
+(Font)              No change on input line 128.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 128.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 133.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 133.
+(Font)              No change on input line 134.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 139.
+(Font)              No change on input line 140.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 139.
+(Font)              No change on input line 141.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 149.
+(Font)              No change on input line 145.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 150.
+(Font)              No change on input line 146.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 154.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 154.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 159.
+(Font)              No change on input line 160.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 172.
+(Font)              No change on input line 160.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 172.
+(Font)              No change on input line 170.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 177.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 177.
+(Font)              No change on input line 171.
  [15]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 175.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 175.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 182.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 183.
+(Font)              No change on input line 182.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 188.
+(Font)              No change on input line 187.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 188.
+(Font)              No change on input line 191.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 193.
+(Font)              No change on input line 192.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 198.
+(Font)              No change on input line 205.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 199.
+(Font)              No change on input line 205.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 212.
+(Font)              No change on input line 210.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 213.
+(Font)              No change on input line 210.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 223.
+(Font)              No change on input line 215.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 223.
-) [16]
-(./madagascar_school_wp_master.fff
+(Font)              No change on input line 216.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 221.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 221.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 226.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 231.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 232.
+ [16]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 245.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 246.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 256.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 256.
+)
+[17] (./madagascar_school_wp_master.fff
 File: dips.pdf Graphic file (type pdf)
 <dips.pdf>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 6.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 6.
- [17
+ [18
 
 ]
 File: madagascarmap.pdf Graphic file (type pdf)
@@ -1229,28 +1250,28 @@ LaTeX Warning: Float too large for page by 21.02914pt on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18]
+[19]
 File: cbsmalariacase.pdf Graphic file (type pdf)
 <cbsmalariacase.pdf>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 24.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 24.
- [19]
+ [20]
 File: age60_and_mosquitonet_3rd.eps Graphic file (type eps)
  <age60_and_mosquitonet_3rd.eps>
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 33.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 33.
- [20
+ [21
 
 
 
 ]
 File: jpal_yos_new_updated.pdf Graphic file (type pdf)
 <jpal_yos_new_updated.pdf>
-) [21
+) [22
 
 ]
 (./madagascar_school_wp_master.ttt
@@ -1258,7 +1279,7 @@ Overfull \hbox (16.52798pt too wide) in paragraph at lines 4--11
  [][][][] 
  []
 
-[22
+[23
 
 
 ]
@@ -1278,23 +1299,23 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (./descriptiveattendance.tex)
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 36.
- (./descriptiveattendance2.tex) [23
+ (./descriptiveattendance2.tex) [24
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 94.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 94.
- [24
-
-]
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 130.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 130.
-LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
-(Font)              No change on input line 130.
  [25
+
+]
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 130.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 130.
+LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
+(Font)              No change on input line 130.
+ [26
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1306,14 +1327,14 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 167.
 
-[26
+[27
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 203.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 203.
- [27
+ [28
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1324,22 +1345,22 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 247.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 247.
- [28
+ [29
 
 ]
 Overfull \hbox (7.39688pt too wide) in paragraph at lines 260--286
  [] 
  []
 
-[29
+[30
 
-] [30
+] [31
 
-]) [31
+]) [32
 
-] [32
+] [33
 
-] [33] [34]
+] [34] [35]
 \openout5 = `madagascar_school_wp_master.fff'.
 
  (madagascar_school_wp_master.fff)
@@ -1347,7 +1368,7 @@ Overfull \hbox (7.39688pt too wide) in paragraph at lines 260--286
 
 
 (madagascar_school_wp_master.ttt)
-AED endfloat: Processing end Figures and Tables [35]
+AED endfloat: Processing end Figures and Tables [36]
 (./madagascar_school_wp_master.fff
 File: schoolabsence_balance.pdf Graphic file (type pdf)
 <schoolabsence_balance.pdf>
@@ -1355,23 +1376,23 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 8.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 8.
-) [36
+) [37
 
 
 
 ] (./madagascar_school_wp_master.ttt
-[37
+[38
 
 
 
-] [38
+] [39
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 87.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 109.
- [39
+ [40
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1380,7 +1401,7 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 166.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 166.
- [40
+ [41
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
@@ -1391,22 +1412,22 @@ LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 210.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 210.
- [41
-
-] [42
+ [42
 
 ] [43
+
+] [44
 
 ]
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 307.
 LaTeX Font Info:    Kanji font shape `JY1/mc/m/it' undefined
 (Font)              No change on input line 312.
- [44
+ [45
 
-] [45
+] [46
 
-]) [46
+]) [47
 
 ]
 (./madagascar_school_wp_master.aux)
@@ -1419,12 +1440,12 @@ nged.
 ### simple group (level 1) entered at line 86 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 21455 strings out of 479466
- 368282 string characters out of 5870549
- 693581 words of memory out of 5000000
- 38670 multiletter control sequences out of 15000+600000
+ 21471 strings out of 479466
+ 368714 string characters out of 5870549
+ 693878 words of memory out of 5000000
+ 38686 multiletter control sequences out of 15000+600000
  441805 words of font info for 149 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 110i,13n,109p,2377b,1578s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,13n,109p,1839b,1578s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on madagascar_school_wp_master.dvi (46 pages, 164084 bytes).
+Output written on madagascar_school_wp_master.dvi (47 pages, 168392 bytes).

@@ -137,7 +137,7 @@ Number of Observations        &        2147         &        2147         &     
 \begin{table}[h]
 \caption{Effect of Net Distribution on the Absence Rate (Based on the School Attendance
 Book Data)}
-\label{t:olsabsence_dailyattend_monthly_withtrend_child_app}\centering
+\label{t:olsabsper_dailyattend_monthly_withtrend_child_app}\centering
 \begin{adjustbox}{max width=\textwidth}
 \begin{threeparttable}
 \begin{tabular}{l*{5}{c}}

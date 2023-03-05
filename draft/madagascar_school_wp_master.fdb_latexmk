@@ -1,19 +1,19 @@
 # Fdb version 3
-["bibtex madagascar_school_wp_master"] 1678014315 "madagascar_school_wp_master.aux" "madagascar_school_wp_master.bbl" "madagascar_school_wp_master" 1678014317
+["bibtex madagascar_school_wp_master"] 1678016614 "madagascar_school_wp_master.aux" "madagascar_school_wp_master.bbl" "madagascar_school_wp_master" 1678016615
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/economic/aer.bst" 1389482635 26812 2ae6e48450a8c17a93d98067b7084a7a ""
   "Oriana.bib" 1360691508 14154 43459bdc569cf59404482d71aef83563 ""
   "Program_evaluation.bib" 1360685274 60555 bc84a8a6aca935da196bf09e531cbbb6 ""
-  "madagascar_school_wp_master.aux" 1678014316 15833 3e5f32c0323084b3989eab09343e6544 "latex"
-  "malaria.bib" 1635597152 251782 01185dc8821db6c28e3a02551889dcff ""
+  "madagascar_school_wp_master.aux" 1678016615 16471 8a9eea5d53eee32ca2514d40479e2514 "latex"
+  "malaria.bib" 1678015137 261285 e7c0d8a08675fad70890cd76bf729008 ""
   "malariaadd.bib" 1522403868 734 c89db7d1df4b25b9615133af2be73512 ""
   (generated)
   "madagascar_school_wp_master.bbl"
   "madagascar_school_wp_master.blg"
-["dvipdf"] 1678014316 "madagascar_school_wp_master.dvi" "madagascar_school_wp_master.pdf" "madagascar_school_wp_master" 1678014317
-  "madagascar_school_wp_master.dvi" 1678014316 164084 d165064cdc00520ef8798282cc053b72 "latex"
+["dvipdf"] 1678016615 "madagascar_school_wp_master.dvi" "madagascar_school_wp_master.pdf" "madagascar_school_wp_master" 1678016615
+  "madagascar_school_wp_master.dvi" 1678016615 168392 58436c43703499ba709e039bb1dc1404 "latex"
   (generated)
   "madagascar_school_wp_master.pdf"
-["latex"] 1678014315 "madagascar_school_wp_master.tex" "madagascar_school_wp_master.dvi" "madagascar_school_wp_master" 1678014317
+["latex"] 1678016614 "madagascar_school_wp_master.tex" "madagascar_school_wp_master.dvi" "madagascar_school_wp_master" 1678016615
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/goth10.tfm" 1463434352 1196 5981e79c37b2cfd27b3612a6783cd4b6 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/ptex-fonts/standard/min10.tfm" 1463434352 1196 1be730212205a270378fba11a44765dc ""
@@ -218,20 +218,20 @@
   "dips.xbb" 1678005281 206 820953214938ee68627f8ed1a1492ad9 ""
   "jpal_yos_new_updated.pdf" 1678006134 20239 4e0e23e6026e85c5326718f1e5b14af1 ""
   "jpal_yos_new_updated.xbb" 1569232935 222 33088085946fc6673ef9d9d3c48377b5 ""
-  "madagascar_school_wp_master.aux" 1678014316 15833 3e5f32c0323084b3989eab09343e6544 "latex"
-  "madagascar_school_wp_master.bbl" 1678014315 12125 023d0dd3bdfd02a7d3baba48053c8ad2 "bibtex madagascar_school_wp_master"
-  "madagascar_school_wp_master.fff" 1678014316 396 77f8622909304b6696f0dd4aa82eeb57 "latex"
-  "madagascar_school_wp_master.out" 1678014316 1324 c7bde74aea56067d8340209e390bdf1b "latex"
-  "madagascar_school_wp_master.tex" 1678014216 137576 1a3159d13ae6e0baf93dbcc7ee4ba35d ""
-  "madagascar_school_wp_master.ttt" 1678014316 26448 1abea2a8820a22770f41a461fc0ad5c1 "latex"
+  "madagascar_school_wp_master.aux" 1678016615 16471 8a9eea5d53eee32ca2514d40479e2514 "latex"
+  "madagascar_school_wp_master.bbl" 1678016614 13825 241308823ca78425b875a9c4eda1b635 "bibtex madagascar_school_wp_master"
+  "madagascar_school_wp_master.fff" 1678016615 396 77f8622909304b6696f0dd4aa82eeb57 "latex"
+  "madagascar_school_wp_master.out" 1678016615 1324 c7bde74aea56067d8340209e390bdf1b "latex"
+  "madagascar_school_wp_master.tex" 1678016611 137932 659bf33a93338c69130b483dd8cf7b15 ""
+  "madagascar_school_wp_master.ttt" 1678016615 26447 b2ae46f62f20ae101a6c3d6a630f85a9 "latex"
   "madagascarmap.pdf" 1439822672 117959 96e6da65eb90430d6147858a51da9194 ""
   "madagascarmap.xbb" 1449569495 217 1d083a1202dcaecc4336f81847f3eea2 ""
   "schoolabsence_balance.pdf" 1678013466 14798 aa9a97ebc4e352e4bc0da17241659804 ""
   "schoolabsence_balance.xbb" 1678005957 223 3cea1a4a669bb8bbbff6fd484e2507d6 ""
   (generated)
   "madagascar_school_wp_master.dvi"
+  "madagascar_school_wp_master.fff"
   "madagascar_school_wp_master.ttt"
   "madagascar_school_wp_master.out"
-  "madagascar_school_wp_master.fff"
-  "madagascar_school_wp_master.log"
   "madagascar_school_wp_master.aux"
+  "madagascar_school_wp_master.log"
