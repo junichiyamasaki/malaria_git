@@ -297,10 +297,31 @@ of nets and altitude, these variables were well-balanced. According to a joint t
 \begin{adjustbox}{max width=\textwidth}
 \begin{threeparttable}
 \label{descriptive_merge_child}\centering
+\begin{tabular}{l*{1}{cccccc}}
+\hline\hline\\
+		&Mean of& Mean of&&&&\\
+	&   Control&    Treatment&        Diff&        s.e.& Control N&  Treatment N\\
+              \multicolumn{6}{l}{\it Data from Our Survey}        \\ \hline
+              \multicolumn{6}{l}{\it Panel A:  6--12 Years Old}        \\
+
+\hline 
+\input{descriptiveb_children} \\
+\multicolumn{6}{l}{{\it Panel B: Household-level Variables}} \\
+\hline \input{descriptiveh} \\
+              \multicolumn{6}{l}{\it Data from the School Attendance Records}        \\ 
+\hline
+              \multicolumn{6}{l}{\it Panel C: Phase 0 (January/2009 -- June/2009)}   \\
+              \hline
+              \input{descriptiveattendance} \\
+              \multicolumn{6}{l}{\it Panel D: Phase 1 (June/2009 -- December/2009)}   \\
+              \hline
+              \input{descriptiveattendance2} \\ \hline \hline
+\end{tabular}
 % descriptive_children
 % descriptiveh
 \begin{tablenotes}
 \item The standard errors are the 18 village-level cluster-robust standard errors in Panels A and B and the 31 grade * school-level cluster-robust standard errors in Panels C and D.  \sym{+} \(p<.10\), \sym{*} \(p<.05\), \sym{**} \(p<.01\), and \sym{***} \(p<.001\)
+\item Joint F-test for Age, Enrollment,  RDT+, and Net Use, conditional on High Malaria Risk Village:  1.52, p-value = 0.24 (0.40 with wild bootstrap). Joint F-test for all the variables conditional on High Malaria Risk Village: 2.98, p-value = 0.04 (0.16 with wild bootstrap).
 \end{tablenotes}
 \end{threeparttable}
 \end{adjustbox}

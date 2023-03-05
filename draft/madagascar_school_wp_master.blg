@@ -1,0 +1,59 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: madagascar_school_wp_master.aux
+The style file: aer.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: malaria.bib
+Database file #2: Oriana.bib
+Repeated entry---line 190 of file Oriana.bib
+ : @article{bleakley_malaria_2010
+ :                               ,
+I'm skipping whatever remains of this entry
+Database file #3: Program_evaluation.bib
+Database file #4: malariaadd.bib
+Warning--empty journal in blackburn_bednets_2008
+Warning--there's a number but no volume in lengeler_insecticide-treated_2006
+You've used 36 entries,
+            2984 wiz_defined-function locations,
+            865 strings with 11993 characters,
+and the built_in function-call counts, 37358 in all, are:
+= -- 5426
+> -- 2703
+< -- 715
++ -- 1002
+- -- 564
+* -- 2954
+:= -- 8116
+add.period$ -- 37
+call.type$ -- 36
+change.case$ -- 252
+chr.to.int$ -- 35
+cite$ -- 38
+duplicate$ -- 386
+empty$ -- 952
+format.name$ -- 1293
+if$ -- 9069
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 31
+newline$ -- 115
+num.names$ -- 432
+pop$ -- 507
+preamble$ -- 1
+purify$ -- 288
+quote$ -- 0
+skip$ -- 0
+stack$ -- 0
+substring$ -- 1090
+swap$ -- 132
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 144
+warning$ -- 2
+while$ -- 414
+width$ -- 0
+write$ -- 620
+is.kanji.str$ -- 0
+(There was 1 error message)

@@ -28,20 +28,20 @@ qui: eststo clear
 
 
 estpost ttest rdt mqnid  absence absence2   if phase==1&(teen==1|underteen==1),by(G)
-esttab using "draft/descriptive_children.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nonumber label replace
+esttab using "draft/descriptive_children.tex",prehead("") posthead("") prefoot("") postfoot("") cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nomtitle nonumber collabels(none) label replace
 eststo clear
 
 estpost ttest rdt mqnid  absence absence2 if phase==1&bound==1&(teen==1|underteen==1),by(G)
-esttab using "draft/descriptiveb_children.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N)) ") nonumber label replace
+esttab using "draft/descriptiveb_children.tex",prehead("") posthead("") prefoot("") postfoot("") cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N)) ") nomtitle nonumber collabels(none) label replace
 eststo clear
 
 
 **Household level
 
 estpost ttest nofnet hhsize mqnhh info mhalt   if phase==1&r3==1,by(G)
-esttab using "draft/descriptiveh.tex", cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nonumber label replace
+esttab using "draft/descriptiveh.tex",prehead("") posthead("") prefoot("") postfoot("") cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nomtitle nonumber collabels(none) label replace
 eststo clear
 
 estpost ttest nofnet hhsize mqnhh info mhalt  if phase==1&r3==1&bound==1,by(G)
-esttab using "draft/descriptivehb.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nonumber label replace
+esttab using "draft/descriptivehb.tex",prehead("") posthead("") prefoot("") postfoot("") cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated N)) N_2(label(Treated N))") nomtitle nonumber collabels(none) label replace
 eststo clear

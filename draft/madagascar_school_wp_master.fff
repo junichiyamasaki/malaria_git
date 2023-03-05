@@ -1,0 +1,10 @@
+\efloatseparator
+ 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.8]{schoolabsence_balance.pdf}
+\caption{Distribution of Absence Days in the First Wave (Based on Attendance Book Data)}
+\label{f:schoolabsence_balance}
+\floatfoot{\textit{Notes:} This graph shows the distribution of absence days recorded in the attendance book in the first wave (June 2009 -- December 2009).}
+
+\end{figure}

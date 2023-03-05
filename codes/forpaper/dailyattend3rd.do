@@ -1,5 +1,5 @@
-use $localdata/Malaria/2nd/dailyattendancedata_2nd.dta,clear
-append using $localdata/Malaria/3rd/dailyattendancedata_3rd.dta
+use data/rawdata/2nd/dailyattendancedata_2nd.dta,clear
+append using data/rawdata/3rd/dailyattendancedata_3rd.dta
 
 
 label define G 1 Treatment 0 Control
@@ -100,8 +100,8 @@ label var classe33low "Under 3rd"
 label var Dandclasse33low "D * Under_3rd"
 label var absent2 "Absence"
 
-save $localdata/Malaria/forpaper/dailyattend_forpaper_3rd.dta, replace
-use $localdata/Malaria/forpaper/dailyattend_forpaper_3rd.dta,clear
+save data/intermediate/forpaper/dailyattend_forpaper_3rd.dta, replace
+use data/intermediate/forpaper/dailyattend_forpaper_3rd.dta,clear
 
 eststo clear
 
@@ -113,6 +113,7 @@ collapse  (sum) absent absent2 chance2 (mean) D Dandclasse33low classe33low  Dan
 
 
 gen absper = absent2/chance2
+label var absper "Absence Rate"
 label var D "Distributed"
 label var classe33low "Under 3rd"
 label var Dandclasse33low "D * Under_3rd"
@@ -304,7 +305,7 @@ eststo
 boottest D,cluster(cluster1) small seed(12345678) noci
 estadd scalar bootp =  r(p)
 
-esttab using $dropbox/Madagascar_LLIN/presentation/olsabsper_dailyattend_monthly_withtrend_child.tex, cells(b(fmt(a3) star) se(fmt(a3))  p(fmt(3)))   scalar("bootp Wild Bootstrap p-value " )  sfmt(3) replace indicate( "Month FE = month_*" "School FE = cecole_dummy*" "Phase FE = phase_*"  "Linear Trend * School FE = cecoleandmonthtrend*"   "Month * School FE = cecoleandmonth_*") addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses only after 09/Oct while other column includes 08/Oct - 09/Jul." "{\it Net Effect of Above 3rd} shows p-value of testing"  "whether the effect for classes above the 3rd is zero or not." ) star(+ .10 * .05  ** .01 *** .001) 
+esttab using draft/olsabsper_dailyattend_monthly_withtrend_child.tex, cells(b(fmt(a3) star) se(fmt(a3))  p(fmt(3)))   scalar("bootp Wild Bootstrap p-value " )  sfmt(3) replace indicate( "Month FE = month_*" "School FE = cecole_dummy*" "Phase FE = phase_*"  "Linear Trend * School FE = cecoleandmonthtrend*"   "Month * School FE = cecoleandmonth_*") addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses only after 09/Oct while other column includes 08/Oct - 09/Jul." "{\it Net Effect of Above 3rd} shows p-value of testing"  "whether the effect for classes above the 3rd is zero or not." ) star(+ .10 * .05  ** .01 *** .001) 
 
 
 
@@ -334,7 +335,7 @@ eststo
 boottest D,cluster(cluster1) small seed(12345678) noci
 estadd scalar bootp =  r(p)
 
-esttab using $dropbox/Madagascar_LLIN/presentation/olsabsper_dailyattend_monthly_withtrend_child2.tex, cells(b(fmt(a3) star) se(fmt(a3))  p(fmt(3)))   scalar("bootp Wild Bootstrap p-value " )  sfmt(3) replace indicate( "Month FE = month_*" "School FE = cecole_dummy*" "Phase FE = phase_*"  "Linear Trend * School FE = cecoleandmonthtrend*"   "Month * School FE = cecoleandmonth_*") addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses only after 09/Oct while other column includes 08/Oct - 09/Jul." "{\it Net Effect of Above 3rd} shows p-value of testing"  "whether the effect for classes above the 3rd is zero or not." ) star(+ .10 * .05  ** .01 *** .001) 
+esttab using draft/olsabsper_dailyattend_monthly_withtrend_child_app.tex, cells(b(fmt(a3) star) se(fmt(a3))  p(fmt(3)))   scalar("bootp Wild Bootstrap p-value " )  sfmt(3) replace indicate( "Month FE = month_*" "School FE = cecole_dummy*" "Phase FE = phase_*"  "Linear Trend * School FE = cecoleandmonthtrend*"   "Month * School FE = cecoleandmonth_*") addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses only after 09/Oct while other column includes 08/Oct - 09/Jul." "{\it Net Effect of Above 3rd} shows p-value of testing"  "whether the effect for classes above the 3rd is zero or not." ) star(+ .10 * .05  ** .01 *** .001) 
 
 
 eststo clear
@@ -342,267 +343,267 @@ reg absent2 G  if phase==0,cluster(cluster1)
 reg absper G  if phase==0,cluster(cluster1)
 
 estpost ttest absent2  absper   if phase==0,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation/descriptiveattendance.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+esttab using "draft/descriptiveattendance.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nomtitle nonumber collabels(none) prehead("") posthead("") prefoot("") postfoot("") label replace
 estpost ttest absent2  absper   if phase==1,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation/descriptiveattendance2.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+esttab using "draft/descriptiveattendance2.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nomtitle nonumber collabels(none) prehead("") posthead("") prefoot("") postfoot("") label replace
 
 
-*** Next, mimic the  questionnaire analaysi
-* use "$dropbox/Malaria/forpaper/dailyattend_forpaper_3rd.dta",clear
-use $localdata/Malaria/forpaper/dailyattend_forpaper_3rd.dta,clear
+* *** Next, mimic the  questionnaire analaysi
+* * use "$dropbox/Malaria/forpaper/dailyattend_forpaper_3rd.dta",clear
+* use data/rawdata/forpaper/dailyattend_forpaper_3rd.dta,clear
 
-*drop if time<td(23NOV2009)
-*drop if time>=td(23DEC2009)&time<=td(15MAY2010)
-*drop if time>=td(23DEC2009)&time<=td(19MAY2010)
-*drop if time>=td(20JUN2010)
+* *drop if time<td(23NOV2009)
+* *drop if time>=td(23DEC2009)&time<=td(15MAY2010)
+* *drop if time>=td(23DEC2009)&time<=td(19MAY2010)
+* *drop if time>=td(20JUN2010)
 
 
 
-collapse (sum) absent absent2 absent2_onemonth chance_onemonth (mean) absent2per classe33low Dandclasse33low classe34high Dandclasse34high D bound cecole classe annee,  by(ideleve G phase cluster1)
+* collapse (sum) absent absent2 absent2_onemonth chance_onemonth (mean) classe33low Dandclasse33low classe34high Dandclasse34high D bound cecole classe annee,  by(ideleve G phase cluster1)
 
-label var D "Distributed"
-label var classe33low "Under 3rd"
-label var Dandclasse33low "D * Under_3rd"
-label var absent2 "Absence"
+* label var D "Distributed"
+* label var classe33low "Under 3rd"
+* label var Dandclasse33low "D * Under_3rd"
+* label var absent2 "Absence"
 
-label var classe34high "Above 3rd"
-label var Dandclasse34high "D * Above 3rd"
+* label var classe34high "Above 3rd"
+* label var Dandclasse34high "D * Above 3rd"
 
-gen absent2per_onemonth=absent2_onemonth/chance_onemonth
+* gen absent2per_onemonth=absent2_onemonth/chance_onemonth
 
 
 
-gen dabsent2=D.absent2
-gen dabsent2per=D.absent2per
+* * gen dabsent2=D.absent2
+* * gen dabsent2per=D.absent2per
 
-label var dabsent2 "$\Delta$ Absence"
-label var absent2_onemonth "Absence 1 month"
-label var absent2per_onemonth "Absence Ratio (1 month)"
-label var absent2per "Absence Ratio"
-label var dabsent2per "$\Delta$ Absence Ratio"
+* * label var dabsent2 "$\Delta$ Absence"
+* label var absent2_onemonth "Absence 1 month"
+* label var absent2per_onemonth "Absence Ratio (1 month)"
+* label var absent2per "Absence Ratio"
+* * label var dabsent2per "$\Delta$ Absence Ratio"
 
 
-hist absent2 if phase==1,by(G, note(""))
-graph export "$dropbox/Madagascar_LLIN/presentation and draft/schoolabsence_balance.pdf",replace
+* hist absent2 if phase==1,by(G, note(""))
+* graph export "draft/schoolabsence_balance.pdf",replace
 
-hist absent2 if phase==1&bound==1,by(G, note(""))
-graph export "$dropbox/Madagascar_LLIN/presentation and draft/schoolabsence_balance_b.pdf",replace
+* hist absent2 if phase==1&bound==1,by(G, note(""))
+* graph export "draft/schoolabsence_balance_b.pdf",replace
 
-estpost ttest absent2   absent2per  absent2_onemonth   absent2per_onemonth if phase==1,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation and draft/descriptiveattendance.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
-eststo clear
+* estpost ttest   absent2_onemonth   absent2per_onemonth if phase==1,by(G)
+* esttab using "draft/descriptiveattendance.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+* eststo clear
 
-estpost ttest absent2   absent2per  absent2_onemonth   absent2per_onemonth  if phase==1&bound==1,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation and draft/descriptiveattendance_b.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
-eststo clear
+* * estpost ttest   absent2_onemonth   absent2per_onemonth  if phase==1&bound==1,by(G)
+* * esttab using "draft/descriptiveattendance_b.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+* * eststo clear
 
 
-estpost ttest absent2   absent2per   if phase==0,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation and draft/descriptiveattendancephase0.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
-eststo clear
+* estpost ttest   absent2_onemonth   absent2per_onemonth if phase==0,by(G)
+* esttab using "draft/descriptiveattendancephase0.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+* eststo clear
 
-estpost ttest absent2   absent2per   if phase==0&bound==1,by(G)
-esttab using "$dropbox/Madagascar_LLIN/presentation and draft/descriptiveattendancephase0_b.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
-eststo clear
+* * estpost ttest   absent2_onemonth   absent2per_onemonth if phase==0&bound==1,by(G)
+* * esttab using "draft/descriptiveattendancephase0_b.tex",cell("mu_1(label(Untreated)) mu_2(label(Treated)) b(label(Diff)) se(label(s.e.)) N_1(label(Untreated region N)) N_2(label(Treated region N))") nonumber label replace
+* * eststo clear
 
-***descriptiveattendance should use cluster robust.
-reg absent2 D  Dandclasse34high classe34high  G i.phase if phase>=1,cluster(cluster1)
-reg absent2per D  Dandclasse34high classe34high  G i.phase if phase>=1,cluster(cluster1)
-reg absent2per D  Dandclasse34high classe34high  G i.phase i.month,cluster(cluster1)
+* ***descriptiveattendance should use cluster robust.
+* reg absent2 D  Dandclasse34high classe34high  G i.phase if phase>=1,cluster(cluster1)
+* reg absent2per D  Dandclasse34high classe34high  G i.phase if phase>=1,cluster(cluster1)
+* reg absent2per D  Dandclasse34high classe34high  G i.phase i.month,cluster(cluster1)
 
 
 
 
-reg absent2 G if phase==1,cluster(cluster1)
-eststo
-reg absent2per G if phase==1,cluster(cluster1)
-eststo
-reg absent2 G if phase==0,cluster(cluster1)
-eststo
-reg absent2per G if phase==0,cluster(cluster1)
-eststo
-esttab using $dropbox/Madagascar_LLIN/presentation/descriptive_dailyattend_presentation, tex se label replace ///
-addnote("Class level cluster robust SEs. Estimation is by OLS."  ) star(+ .10 * .05  ** .01 *** .001) ///
-mgroups("{\it Oct/09-Dec/09}" "{\it Sep/08-Oct/09}", pattern(1 0 1 0) prefix(\multicolumn{@span}{c}{) suffix(}))
+* reg absent2 G if phase==1,cluster(cluster1)
+* eststo
+* reg absent2per G if phase==1,cluster(cluster1)
+* eststo
+* reg absent2 G if phase==0,cluster(cluster1)
+* eststo
+* reg absent2per G if phase==0,cluster(cluster1)
+* eststo
+* esttab using $dropbox/Madagascar_LLIN/presentation/descriptive_dailyattend_presentation, tex se label replace ///
+* addnote("Class level cluster robust SEs. Estimation is by OLS."  ) star(+ .10 * .05  ** .01 *** .001) ///
+* mgroups("{\it Oct/09-Dec/09}" "{\it Sep/08-Oct/09}", pattern(1 0 1 0) prefix(\multicolumn{@span}{c}{) suffix(}))
 
 
-eststo clear
-reg dabsent2 D if phase==2&classe33low==1,
-eststo
-reg dabsent2 D if phase==2&classe33low==0,
-eststo
-reg absent2 D if phase==2&classe33low==1,
-eststo
-reg absent2 D if phase==2&classe33low==0,
-eststo
-eststo clear
-reg dabsent2 D if phase==2,cluster(cluster1)
-eststo
-reg absent2 D if phase==2,cluster(cluster1)
-eststo
-esttab using $dropbox/Madagascar_LLIN/presentation/olsabsence_dailyattend, tex se label replace ///
-addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply." ) star(+ .10 * .05  ** .01 *** .001) 
+* eststo clear
+* reg dabsent2 D if phase==2&classe33low==1,
+* eststo
+* reg dabsent2 D if phase==2&classe33low==0,
+* eststo
+* reg absent2 D if phase==2&classe33low==1,
+* eststo
+* reg absent2 D if phase==2&classe33low==0,
+* eststo
+* eststo clear
+* reg dabsent2 D if phase==2,cluster(cluster1)
+* eststo
+* reg absent2 D if phase==2,cluster(cluster1)
+* eststo
+* esttab using $dropbox/Madagascar_LLIN/presentation/olsabsence_dailyattend, tex se label replace ///
+* addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply." ) star(+ .10 * .05  ** .01 *** .001) 
 
 
-eststo clear
-
-
-
-reg dabsent2 D Dandclasse34high  classe34high if phase==2,cluster(cluster1)
-eststo
-reg absent2 D Dandclasse34high  classe34high if phase==2,cluster(cluster1)
-eststo
-esttab using $dropbox/Madagascar_LLIN/presentation/olsabsence_dailyattend_hetero, tex se label replace ///
-addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply." ) star(+ .10 * .05  ** .01 *** .001) 
-
-
-eststo clear
-reg dabsent2per D if phase==2&classe33low==1,
-eststo
-reg dabsent2per D if phase==2&classe33low==0,		
-eststo
-reg absent2per D if phase==2&classe33low==1,
-eststo
-reg absent2per D if phase==2&classe33low==0,
-eststo
-eststo clear
-reg dabsent2per D if phase==2,cluster(cluster1)
-eststo
-reg absent2per D if phase==2,cluster(cluster1)
-eststo
-esttab using $dropbox/Madagascar_LLIN/presentation/olsabsencep_dailyattend, tex se  label replace ///
-addnote("Class level cluster robust SEs. Estimation is by OLS."  "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply."  ) star(+ .10 * .05  ** .01 *** .001) 
-
-label var absent2 " The Difference of Absence"
-
-hist dabsent2, by(G)
-graph export $dropbox/Madagascar_LLIN/presentation/distribution_dabsence_book.pdf,replace
-/*
-
-use dailyattend_forpaper_2nd.dta, clear
-
-foreach x in "" "2"{
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-
-esttab using dailyabsent`x'ols_2nd90.csv, p  label addnote(1-3 use all schools and 4-6 only use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
-
-eststo clear
-
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-
-
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-
-esttab using dailyabsent`x'ols_2nd.csv, p  label addnote(1-3 use all schools and 4-6 only use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
-eststo clear
-}
-/*
-
-felsdvreg absent  D Dandtime* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-felsdvreg absent  D Dandtime* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-esttab using dailyabsentols_dailyeffect_2nd.csv, p  label addnote(1-3 use all schools and 4-6 use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
-eststo clear
-
-felsdvreg absent  Dandtime* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-felsdvreg absent  Dandtime* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
-eststo
-
-
-esttab using dailyabsentols_dailyeffect2_2nd.csv, p  label addnote(1-3 use all schools and 4-6 use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
-eststo clear
-
-
-/*xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&bound==1,fe 
-eststo
-xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&classe<=33&bound==1,fe 
-eststo
-xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&classe>33&bound==1,fe
-eststo
-
-xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&bound==1,fe 
-eststo
-xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&classe<=33&bound==1,fe 
-eststo
-xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&classe>33&bound==1,fe
-eststo
-
-esttab using dailyabsentlogit_b_2nd.tex, p  label addnote(1-3 use Sep 2008 - May 2010 and 4-6 use Sep 2009 - May 2010. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
-eststo clear 
-*/ 
+* eststo clear
+
+
+
+* reg dabsent2 D Dandclasse34high  classe34high if phase==2,cluster(cluster1)
+* eststo
+* reg absent2 D Dandclasse34high  classe34high if phase==2,cluster(cluster1)
+* eststo
+* esttab using $dropbox/Madagascar_LLIN/presentation/olsabsence_dailyattend_hetero, tex se label replace ///
+* addnote("Class level cluster robust SEs. Estimation is by OLS." "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply." ) star(+ .10 * .05  ** .01 *** .001) 
+
+
+* eststo clear
+* reg dabsent2per D if phase==2&classe33low==1,
+* eststo
+* reg dabsent2per D if phase==2&classe33low==0,		
+* eststo
+* reg absent2per D if phase==2&classe33low==1,
+* eststo
+* reg absent2per D if phase==2&classe33low==0,
+* eststo
+* eststo clear
+* reg dabsent2per D if phase==2,cluster(cluster1)
+* eststo
+* reg absent2per D if phase==2,cluster(cluster1)
+* eststo
+* esttab using $dropbox/Madagascar_LLIN/presentation/olsabsencep_dailyattend, tex se  label replace ///
+* addnote("Class level cluster robust SEs. Estimation is by OLS."  "Column 1 uses the difference between the 2nd phase and the 1st phase as LHS," "while column 2 uses the 2nd waive as LHS simply."  ) star(+ .10 * .05  ** .01 *** .001) 
+
+* label var absent2 " The Difference of Absence"
+
+* hist dabsent2, by(G)
+* graph export $dropbox/Madagascar_LLIN/presentation/distribution_dabsence_book.pdf,replace
+* /*
+
+* use dailyattend_forpaper_2nd.dta, clear
+
+* foreach x in "" "2"{
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecolei* if time<td(1JUN2010)&annee==90&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecolei* if time<td(1JUN2010)&annee==90&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+
+* esttab using dailyabsent`x'ols_2nd90.csv, p  label addnote(1-3 use all schools and 4-6 only use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
+
+* eststo clear
+
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  D cecole*andmonth* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+
+
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent`x'  Dandmonth* cecole*andmonth* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+
+* esttab using dailyabsent`x'ols_2nd.csv, p  label addnote(1-3 use all schools and 4-6 only use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
+* eststo clear
+* }
+* /*
+
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  D Dandtime* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+* esttab using dailyabsentols_dailyeffect_2nd.csv, p  label addnote(1-3 use all schools and 4-6 use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
+* eststo clear
+
+* felsdvreg absent  Dandtime* if time<td(1JUN2010),ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe<=33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe>33,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+* felsdvreg absent  Dandtime* if time<td(1JUN2010)&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe<=33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+* felsdvreg absent  Dandtime* if time<td(1JUN2010)&classe>33&bound==1,ivar(ideleve) jvar(time) xb(xb) peff(phat) feff(fhat) res(res) mover(mover) mnum(mnum) pobs(pobs) group(group) 
+* eststo
+
+
+* esttab using dailyabsentols_dailyeffect2_2nd.csv, p  label addnote(1-3 use all schools and 4-6 use seaside schools. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
+* eststo clear
+
+
+* /*xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&bound==1,fe 
+* eststo
+* xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&classe<=33&bound==1,fe 
+* eststo
+* xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&classe>33&bound==1,fe
+* eststo
+
+* xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&bound==1,fe 
+* eststo
+* xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&classe<=33&bound==1,fe 
+* eststo
+* xtlogit absent Dandmonth1-Dandmonth12 if time<td(1JUN2010)&time>=td(1SEP2009)&classe>33&bound==1,fe
+* eststo
+
+* esttab using dailyabsentlogit_b_2nd.tex, p  label addnote(1-3 use Sep 2008 - May 2010 and 4-6 use Sep 2009 - May 2010. ) replace mtitle(full "1st-3rd" "4th-" full "1st-3rd" "4th-")
+* eststo clear 
+* */ 
 

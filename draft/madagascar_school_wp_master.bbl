@@ -1,0 +1,232 @@
+\ifx\undefined\bysame
+\newcommand{\bysame}{\leavevmode\hbox to\leftmargin{\hrulefill\,\,}}
+\fi
+\begin{thebibliography}{xx}
+
+\harvarditem[Acemoglu et al.]{Acemoglu, Johnson and
+  Robinson}{2001}{acemoglu_colonial_2001}
+{\bf Acemoglu, Daron, Simon Johnson, and James~A. Robinson}, ``The {Colonial}
+  {Origins} of {Comparative} {Development}: {An} {Empirical} {Investigation},''
+  {\it American Economic Review}, December 2001, {\it 91} (5), 1369--1401.
+
+\harvarditem[Alatas et al.]{Alatas, Banerjee, Hanna, Olken and
+  Tobias}{2012}{alatas_targeting_2012}
+{\bf Alatas, Vivi, Abhijit Banerjee, Rema Hanna, Benjamin~A Olken, and Julia
+  Tobias}, ``Targeting the {Poor}: {Evidence} from a {Field} {Experiment} in
+  {Indonesia},'' {\it American Economic Review}, June 2012, {\it 102} (4),
+  1206--1240.
+
+\harvarditem[Almond]{Almond}{2006}{almond_is_2006}
+{\bf Almond, Douglas}, ``Is the 1918 Influenza Pandemic Over? Long-Term Effects
+  of In Utero Influenza Exposure in the Post-1940 {U.S.} Population,'' {\it
+  Journal of Political Economy}, August 2006, {\it 114} (4), 672--712.
+
+\harvarditem[Alsan]{Alsan}{2015}{alsan_effect_2015}
+{\bf Alsan, Marcella}, ``The {Effect} of the {TseTse} {Fly} on {African}
+  {Development},'' {\it American Economic Review}, January 2015, {\it 105} (1),
+  382--410.
+
+\harvarditem[Angrist and Imbens]{Angrist and
+  Imbens}{1995}{angrist_two-stage_1995}
+{\bf Angrist, Joshua~D. and Guido~W. Imbens}, ``Two-Stage Least Squares
+  Estimation of Average Causal Effects in Models with Variable Treatment
+  Intensity,'' {\it Journal of the American Statistical Association}, June
+  1995, {\it 90} (430), 431--442.
+
+\harvarditem[Banerjee et al.]{Banerjee, Niehaus and
+  Suri}{2019}{banerjee_universal_2019}
+{\bf Banerjee, Abhijit, Paul Niehaus, and Tavneet Suri}, ``Universal {Basic}
+  {Income} in the {Developing} {World},'' {\it Annual Review of Economics},
+  August 2019, {\it 11}, 959--983.
+
+\harvarditem[B^^c3^^b8dker et al.]{B^^c3^^b8dker, Akida, Shayo, Kisinza,
+  Msangeni, Pedersen and Lindsay}{2003}{bodker_relationship_2003}
+{\bf B^^c3^^b8dker, R., J.~Akida, D.~Shayo, W.~Kisinza, H.~A. Msangeni, E.~M.
+  Pedersen, and S.~W. Lindsay}, ``Relationship {Between} {Altitude} and
+  {Intensity} of {Malaria} {Transmission} in the {Usambara} {Mountains},
+  {Tanzania},'' {\it Journal of Medical Entomology}, September 2003, {\it 40}
+  (5), 706--717.
+
+\harvarditem[Bharadwaj et al.]{Bharadwaj, L^^c3^^b8ken and
+  Neilson}{2013}{bharadwaj_early_2013}
+{\bf Bharadwaj, Prashant, Katrine~Vellesen L^^c3^^b8ken, and Christopher
+  Neilson}, ``Early {Life} {Health} {Interventions} and {Academic}
+  {Achievement},'' {\it American Economic Review}, August 2013, {\it 103} (5),
+  1862--1891.
+
+\harvarditem[Bhatt et al.]{Bhatt, Weiss, Cameron, Bisanzio, Mappin, Dalrymple,
+  Battle, Moyes, Henry, Eckhoff, Wenger, Bri^^c3^^abt, Penny, Smith, Bennett,
+  Yukich, Eisele, Griffin, Fergus, Lynch, Lindgren, Cohen, Murray, Smith, Hay,
+  Cibulskis and Gething}{2015}{bhatt_effect_2015}
+{\bf Bhatt, S., D.~J. Weiss, E.~Cameron, D.~Bisanzio, B.~Mappin, U.~Dalrymple,
+  K.~E. Battle, C.~L. Moyes, A.~Henry, P.~A. Eckhoff, E.~A. Wenger,
+  O.~Bri^^c3^^abt, M.~A. Penny, T.~A. Smith, A.~Bennett, J.~Yukich, T.~P.
+  Eisele, J.~T. Griffin, C.~A. Fergus, M.~Lynch, F.~Lindgren, J.~M. Cohen,
+  C.~L.~J. Murray, D.~L. Smith, S.~I. Hay, R.~E. Cibulskis, and P.~W. Gething},
+  ``The effect of malaria control on {Plasmodium} falciparum in {Africa}
+  between 2000 and 2015,'' {\it Nature}, October 2015, {\it 526} (7572),
+  207--211.
+
+\harvarditem[Blackburn et al.]{Blackburn, Mahajan, Tarrozi and
+  Yoong}{2008}{blackburn_bednets_2008}
+{\bf Blackburn, Brian, Aprajit Mahajan, Alessandro Tarrozi, and Joanne Yoong},
+  ``Bednets, {Information} and {Malaria} in {Orissa},'' 2008.
+
+\harvarditem[Bleakley]{Bleakley}{2010}{bleakley_malaria_2010}
+{\bf Bleakley, Hoyt}, ``Malaria {Eradication} in the {Americas}: {A}
+  {Retrospective} {Analysis} of {Childhood} {Exposure},'' {\it American
+  Economic Journal: Applied Economics}, April 2010, {\it 2} (2), 1--45.
+
+\harvarditem[Brown et al.]{Brown, Ravallion and Van~de
+  Walle}{2016}{brown_poor_2016}
+{\bf Brown, Caitlin, Martin Ravallion, and Dominique~Van de~Walle}, ``A poor
+  means test? {Econometric} targeting in {Africa},'' {NBER} {Working} {Paper}
+  22919 2016.
+
+\harvarditem[Cameron et al.]{Cameron, Gelbach and
+  Miller}{2008}{cameron_bootstrap-based_2008}
+{\bf Cameron, A.~Colin, Jonah~B. Gelbach, and Douglas~L. Miller},
+  ``Bootstrap-{Based} {Improvements} for {Inference} with {Clustered}
+  {Errors},'' {\it Review of Economics and Statistics}, 2008, {\it 90} (3),
+  414--427.
+
+\harvarditem[Coady et al.]{Coady, Grosh and
+  Hoddinott}{2004}{coady_targeting_2004}
+{\bf Coady, David, Margaret Grosh, and John Hoddinott}, ``Targeting {Outcomes}
+  {Redux},'' {\it The World Bank Research Observer}, March 2004, {\it 19} (1),
+  61--85.
+
+\harvarditem[Cohen and Dupas]{Cohen and Dupas}{2010}{cohen_free_2010}
+{\bf Cohen, Jessica and Pascaline Dupas}, ``Free {Distribution} or
+  {Cost}-{Sharing}? {Evidence} from a {Randomized} {Malaria} {Prevention}
+  {Experiment}*,'' {\it Quarterly Journal of Economics}, December 2010, {\it
+  125} (1), 1--45.
+
+\harvarditem[Dupas]{Dupas}{2014a}{dupas_getting_2014}
+{\bf Dupas, Pascaline}, ``Getting essential health products to their end users:
+  {Subsidize}, but how much?,'' {\it Science}, September 2014, {\it 345}
+  (6202), 1279--1281.
+
+\harvarditem[Dupas]{Dupas}{2014b}{dupas_short-run_2014}
+{\bf \bysame{}}, ``Short-{Run} {Subsidies} and {Long}-{Run} {Adoption} of {New}
+  {Health} {Products}: {Evidence} {From} a {Field} {Experiment},'' {\it
+  Econometrica}, January 2014, {\it 82} (1), 197--228.
+
+\harvarditem[Elbers et al.]{Elbers, Fujii, Lanjouw, ^^c3^^96zler and
+  Yin}{2007}{elbers_poverty_2007}
+{\bf Elbers, Chris, Tomoki Fujii, Peter Lanjouw, Berk ^^c3^^96zler, and Wesley
+  Yin}, ``Poverty alleviation through geographic targeting: {How} much does
+  disaggregation help?,'' {\it Journal of Development Economics}, May 2007,
+  {\it 83} (1), 198--213.
+
+\harvarditem[Field et al.]{Field, Robles and Torero}{2009}{field_iodine_2009}
+{\bf Field, Erica, Omar Robles, and Maximo Torero}, ``Iodine {Deficiency} and
+  {Schooling} {Attainment} in {Tanzania},'' {\it American Economic Journal:
+  Applied Economics}, September 2009, {\it 1} (4), 140--169.
+
+\harvarditem[Gimnig et al.]{Gimnig, Kolczak, Hightower, Vulule, Schoute, Kamau,
+  Phillips-Howard, ter Kuile, Nahlen and Hawley}{2003}{gimnig_effect_2003}
+{\bf Gimnig, John~E, Margarette~S Kolczak, Allen~W Hightower, John~M Vulule,
+  Erik Schoute, Luna Kamau, Penelope~A Phillips-Howard, Feiko~O ter Kuile,
+  Bernard~L Nahlen, and William~A Hawley}, ``Effect of permethrin-treated bed
+  nets on the spatial distribution of malaria vectors in western {Kenya},''
+  {\it The American Journal of Tropical Medicine and Hygiene}, April 2003, {\it
+  68} (4 Suppl), 115--120.
+
+\harvarditem[Hanna and Olken]{Hanna and Olken}{2018}{hanna_universal_2018}
+{\bf Hanna, Rema and Benjamin~A. Olken}, ``Universal {Basic} {Incomes} versus
+  {Targeted} {Transfers}: {Anti}-{Poverty} {Programs} in {Developing}
+  {Countries},'' {\it Journal of Economic Perspectives}, November 2018, {\it
+  32} (4), 201--226.
+
+\harvarditem[Hawley et al.]{Hawley, Phillips-Howard, ter Kuile, Terlouw,
+  Vulule, Ombok, Nahlen, Gimnig, Kariuki, Kolczak and
+  Hightower}{2003}{hawley_community-wide_2003-1}
+{\bf Hawley, William~A, Penelope~A Phillips-Howard, Feiko~O ter Kuile, Dianne~J
+  Terlouw, John~M Vulule, Maurice Ombok, Bernard~L Nahlen, John~E Gimnig,
+  Simon~K Kariuki, Margarette~S Kolczak, and Allen~W Hightower},
+  ``Community-wide effects of permethrin-treated bed nets on child mortality
+  and malaria morbidity in western {Kenya},'' {\it The American Journal of
+  Tropical Medicine and Hygiene}, April 2003, {\it 68} (4 Suppl), 121--127.
+
+\harvarditem[Hoffmann]{Hoffmann}{2009}{hoffmann_intrahousehold_2009}
+{\bf Hoffmann, Vivian}, ``Intrahousehold {Allocation} of {Free} and {Purchased}
+  {Mosquito} {Nets},'' {\it American Economic Review}, May 2009, {\it 99} (2),
+  236--241.
+
+\harvarditem[Lengeler]{Lengeler}{2006}{lengeler_insecticide-treated_2006}
+{\bf Lengeler, Christian~P.}, ``Insecticide-treated bed nets and curtains for
+  preventing malaria,'' {\it The Cochrane Library 2006}, 2006, (3).
+
+\harvarditem[Mahajan et al.]{Mahajan, Michel and
+  Tarozzi}{2020}{mahajan_identification_2020}
+{\bf Mahajan, Aprajit, Christian Michel, and Alessandro Tarozzi},
+  ``Identification of {Time}-{Inconsistent} {Models}: {The} {Case} of
+  {Insecticide} {Treated} {Nets},'' Technical Report w27198, National Bureau of
+  Economic Research, Cambridge, MA May 2020.
+
+\harvarditem[Maskin et al.]{Maskin, Monga, Thuilliez and
+  Berth^^c3^^a9lemy}{2019}{maskin_economics_2019}
+{\bf Maskin, Eric, C^^c3^^a9lestin Monga, Josselin Thuilliez, and Jean-Claude
+  Berth^^c3^^a9lemy}, ``The economics of malaria control in an age of declining
+  aid,'' {\it Nature Communications}, December 2019, {\it 10} (1), 2269.
+
+\harvarditem[Miguel and Kremer]{Miguel and Kremer}{2004}{miguel_worms:_2004}
+{\bf Miguel, Edward and Michael Kremer}, ``Worms: {Identifying} {Impacts} on
+  {Education} and {Health} in the {Presence} of {Treatment} {Externalities},''
+  {\it Econometrica}, 2004, {\it 72} (1), 159--217.
+
+\harvarditem[Nichols and Zeckhauser]{Nichols and
+  Zeckhauser}{1982}{nichols_targeting_1982}
+{\bf Nichols, Albert~L. and Richard~J. Zeckhauser}, ``Targeting {Transfers}
+  through {Restrictions} on {Recipients},'' {\it The American Economic Review},
+  1982, {\it 72} (2), 372--377.
+
+\harvarditem[Noor et al.]{Noor, Kirui, Brooker and Snow}{2009}{noor_use_2009}
+{\bf Noor, A.~M, V.~C Kirui, S.~J Brooker, and R.~W Snow}, ``The use of
+  insecticide treated nets by age: implications for universal coverage in
+  {Africa},'' {\it BMC Public Health}, 2009, {\it 9} (1), 369.
+
+\harvarditem[Pryce et al.]{Pryce, Richardson and
+  Lengeler}{2018}{pryce_insecticide-treated_2018}
+{\bf Pryce, Joseph, Marty Richardson, and Christian Lengeler},
+  ``Insecticide-treated nets for preventing malaria,'' {\it Cochrane Database
+  of Systematic Reviews}, November 2018.
+
+\harvarditem[Ravallion]{Ravallion}{2009}{ravallion_how_2009}
+{\bf Ravallion, Martin}, ``How {Relevant} {Is} {Targeting} to the {Success} of
+  an {Antipoverty} {Program}?,'' {\it The World Bank Research Observer}, August
+  2009, {\it 24} (2), 205--231.
+
+\harvarditem[Ravallion]{Ravallion}{2017}{ravallion_vox}
+{\bf \bysame{}}, ``Straw Men in the Debate on Basic Income versus Targeting,''
+  https://voxdev.org/topic/institutions-political-economy/straw-men-debate-basic-income-versus-targeting
+  2017.
+\newblock Accessed: 2018/Mar/30.
+
+\harvarditem[Rowe et al.]{Rowe, Rowe, Snow, Korenromp, Schellenberg, Stein,
+  Nahlen, Bryce, Black and Steketee}{2006}{rowe_burden_2006}
+{\bf Rowe, Alexander~K, Samantha~Y Rowe, Robert~W Snow, Eline~L Korenromp,
+  Joanna RM~Armstrong Schellenberg, Claudia Stein, Bernard~L Nahlen, Jennifer
+  Bryce, Robert~E Black, and Richard~W Steketee}, ``The burden of malaria
+  mortality among {African} children in the year 2000,'' {\it International
+  Journal of Epidemiology}, June 2006, {\it 35} (3), 691 --704.
+
+\harvarditem[{Sumitomo-Chemical}]{{Sumitomo-Chemical}}{2010}{sumitomo-chemical_olyset_2010}
+{\bf {Sumitomo-Chemical}}, ``Olyset technical {Brochure} 2010,'' 2010.
+
+\harvarditem[Tarozzi et al.]{Tarozzi, Mahajan, Blackburn, Kopf, Krishnan and
+  Yoong}{2014}{tarozzi_micro-loans_2014}
+{\bf Tarozzi, Alessandro, Aprajit Mahajan, Brian Blackburn, Dan Kopf, Lakshmi
+  Krishnan, and Joanne Yoong}, ``Micro-{Loans}, {Insecticide}-{Treated}
+  {Bednets}, and {Malaria}: {Evidence} from a {Randomized} {Controlled} {Trial}
+  in {Orissa}, {India},'' {\it The American Economic Review}, 2014, {\it 104}
+  (7), 1909--1941.
+
+\harvarditem[{The Abdul Latif Jameel Poverty Action Lab}]{{The Abdul Latif
+  Jameel Poverty Action
+  Lab}}{2017}{the_abdul_latif_jameel_poverty_action_lab_roll_2017}
+{\bf {The Abdul Latif Jameel Poverty Action Lab}}, ``Roll {Call}: {Getting}
+  {Children} into {School},'' J-{PAL} {Policy} {Bulletin} 2017.
+
+\end{thebibliography}

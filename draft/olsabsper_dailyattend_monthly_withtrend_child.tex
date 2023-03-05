@@ -1,0 +1,29 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}\\
+            &\multicolumn{1}{c}{absent2}&\multicolumn{1}{c}{absent2}&\multicolumn{1}{c}{absent2}&\multicolumn{1}{c}{absent2}&\multicolumn{1}{c}{absent2}\\
+            &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         &      b/se/p         \\
+\hline
+D           &      -0.191\sym{*}  &      -0.167\sym{+}  &      -0.159\sym{+}  &      -0.145\sym{+}  &      -0.116         \\
+            &      0.0919         &      0.0853         &      0.0811         &      0.0809         &       0.115         \\
+            &       0.047         &       0.059         &       0.059         &       0.083         &       0.321         \\
+\_cons      &      0.0386         &      0.0451         &    -0.00509         &      -1.132\sym{***}&       0.179         \\
+            &      0.0675         &      0.0655         &      0.0849         &       0.227         &       0.130         \\
+            &       0.572         &       0.497         &       0.953         &       0.000         &       0.178         \\
+Month FE    &          No         &          No         &         Yes         &         Yes         &          No         \\
+School FE   &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Phase FE    &         Yes         &         Yes         &         Yes         &         Yes         &         Yes         \\
+Linear Trend * School FE &          No         &          No         &          No         &         Yes         &          No         \\
+Month * School FE &          No         &          No         &          No         &          No         &         Yes         \\
+\hline
+\(N\)       &       13928         &       19104         &       19104         &       19104         &       19104         \\
+Wild Bootstrap p-value &                     &                     &                     &                     &                     \\
+\hline\hline
+\multicolumn{6}{l}{\footnotesize Class level cluster robust SEs. Estimation is by OLS.}\\
+\multicolumn{6}{l}{\footnotesize Column 1 uses only after 09/Oct while other column includes 08/Oct - 09/Jul.}\\
+\multicolumn{6}{l}{\footnotesize {\it Net Effect of Above 3rd} shows p-value of testing}\\
+\multicolumn{6}{l}{\footnotesize whether the effect for classes above the 3rd is zero or not.}\\
+\end{tabular}
+}
